@@ -2,7 +2,7 @@
 """
 Module contains the BasicCache class that inherits from BaseCaching
 """
-from BaseCaching import BaseCaching
+from base_caching import BaseCaching
 from typing import Dict
 
 
