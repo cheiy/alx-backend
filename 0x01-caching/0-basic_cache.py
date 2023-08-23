@@ -7,6 +7,9 @@ from typing import Dict
 
 
 class BasicCache(BaseCaching):
+    """
+    This class inherits from BaseCaching and is a caching system
+    """
     def put(self, key, item) -> None:
         """
         function assigns the item value to the dictionary cache_data for
