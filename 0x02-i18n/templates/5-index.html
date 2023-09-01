@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>{{ _('home_title') }}</title>
 </head>
 <body>
-    <header>
     <h1>{{ _('home_header') }}</h1>
+
+    <p>
         {% if g.user %}
-	<p>{{ _('logged_in_as', username=g.user['name']) }}</p>
+		{{ _('logged_in_as', username=g.user.name) }}</p>
         {% else %}
-	<p>{{ _('not_logged_in') }}</p>
+		{{ _('not_logged_in') }}
         {% endif %}
-    </header>
     </p>
 </body>
 </html>
